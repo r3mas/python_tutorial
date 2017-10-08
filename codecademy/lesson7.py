@@ -26,7 +26,6 @@ def join_strings(words):
 def flatten(lists):
     results = []
     for numbers in lists:
-    #    print numbers
         for i in numbers:
             #print i
             results.append(i)
