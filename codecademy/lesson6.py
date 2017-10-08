@@ -11,7 +11,7 @@ Write a function called get_average that takes a student dictionary (like lloyd,
 
 lloyd = {
     "name": "Lloyd",
-    "homework": [90.0, 97.0, 75.0, 92.0],
+    "homework": [0.0, 97.0, 75.0, 92.0],
     "quizzes": [88.0, 40.0, 94.0],
     "tests": [75.0, 90.0]
 }
@@ -39,7 +39,19 @@ def get_average(student):
 
     return 0.1 * homework + 0.3 * quizzes + 0.6 * tests
 
+def get_letter_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
 
 print average(alice["homework"])
-print get_average(alice)
-print "tyler = ", get_average(tyler)
+print get_average(lloyd)
+print get_letter_grade(get_average(lloyd))
