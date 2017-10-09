@@ -21,8 +21,8 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 
-print ship_row
-print ship_col
+#print ship_row
+#print ship_col
 
 for turn in range(4):
 
@@ -40,10 +40,12 @@ for turn in range(4):
             print "You missed my battleship!"
             board[guess_col][guess_row] = "X"
 
-    turn += 1
+    #turn += 1
+        if turn == 3:
+            print "Game Over"
+
     print "Turn", turn + 1
     print_board(board)
-
 #print board
 #print_board(board)
 
