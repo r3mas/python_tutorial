@@ -1,3 +1,26 @@
+#8.11
+
+thing = "spam!"
+
+for c in thing:
+    print c
+
+word = "eggs!"
+
+# Your code here!
+for i in word:
+    print i
+"""
+#8.10
+
+hobbies = []
+
+for i in range(3):
+    hobby = raw_input("Input hoby: ")
+    hobbies.append(hobby)
+print hobbies
+
+
 #8.9
 
 print "Counting..."
@@ -5,7 +28,6 @@ print "Counting..."
 for i in range(20):
     print i
 
-"""
 #8.8
 from random import randint
 
