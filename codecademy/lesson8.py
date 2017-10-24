@@ -1,5 +1,13 @@
-#8.4
+#8.5
 
+count = 0
+
+while count < 10: # Add a colon
+    print count
+    count += 1
+
+"""
+#8.4
 
 choice = raw_input('Enjoying the course? (y/n)')
 
@@ -7,7 +15,6 @@ while choice != 'y' and choice != 'n':  # Fill in the condition (before the colo
     choice = raw_input("Sorry, I didn't catch that. Enter again: ")
 
 
-"""
 #8.3
 
 num = 1
