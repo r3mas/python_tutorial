@@ -1,3 +1,11 @@
+#8.9
+
+print "Counting..."
+
+for i in range(20):
+    print i
+
+"""
 #8.8
 from random import randint
 
@@ -17,7 +25,6 @@ while guesses_left > 0:
         print "You lose."
         guesses_left -= 1
 
-"""
 #8.7
 
 import random
