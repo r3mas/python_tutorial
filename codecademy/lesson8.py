@@ -1,3 +1,14 @@
+#8.6
+
+count = 0
+
+while True:
+    print count
+    count += 1
+    if count >= 10:
+        break
+
+"""
 #8.5
 
 count = 0
@@ -6,7 +17,6 @@ while count < 10: # Add a colon
     print count
     count += 1
 
-"""
 #8.4
 
 choice = raw_input('Enjoying the course? (y/n)')
