@@ -1,3 +1,15 @@
+#8.18
+fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
+
+print 'You have...'
+for f in fruits:
+    if f == 'tomatoj':
+        print 'A tomato is not a fruit!' # (It actually is.)
+        break
+    print 'A', f
+else:
+    print 'A fine selection of fruits!'
+"""
 #8.17
 fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
 
@@ -10,8 +22,6 @@ for f in fruits:
 else:
     print 'A fine selection of fruits!'
 
-
-"""
 #8.16
 
 list_a = [3, 9, 17, 15, 19]
