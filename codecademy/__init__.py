@@ -11,3 +11,5 @@ for i in range(len(a)):
         for k in range(len(c)):
             for l in range(len(d)):
                 print a[i] + b [j] + c[k] + d[l] + e,
+
+

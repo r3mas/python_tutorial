@@ -1,3 +1,30 @@
+def is_even(x):
+
+    if (x % 2) == 0:
+        return True
+    else:
+        return False
+
+def is_int(x):
+    print float(x)
+    if float(x) == int(x):
+        return True
+    else:
+        return False
+
+def digit_sum(n):
+    c = 0
+    for i in str(n):
+        c += int(i)
+    return c
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
 #8.18
 fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
 
@@ -9,7 +36,7 @@ for f in fruits:
     print 'A', f
 else:
     print 'A fine selection of fruits!'
-"""
+    
 #8.17
 fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
 
@@ -189,5 +216,3 @@ if count < 5:
 while count <= 9:
     print "Hello, I am a while and count is", count
     count += 1
-
-"""
