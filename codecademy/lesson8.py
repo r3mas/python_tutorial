@@ -1,3 +1,17 @@
+#8.12
+
+phrase = "A bird in the hand..."
+
+# Add your for loop
+for char in phrase:
+    if char == 'A' or char == 'a':
+        print "X",
+    else:
+        print char,
+
+print
+
+"""
 #8.11
 
 thing = "spam!"
@@ -10,7 +24,7 @@ word = "eggs!"
 # Your code here!
 for i in word:
     print i
-"""
+
 #8.10
 
 hobbies = []
