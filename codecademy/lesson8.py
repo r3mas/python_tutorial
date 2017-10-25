@@ -1,3 +1,15 @@
+#8.13
+numbers  = [7, 9, 12, 54, 99]
+
+print "This list contains: "
+
+for num in numbers:
+    print num
+
+for i in numbers:
+    print i ** 2
+
+"""
 #8.12
 
 phrase = "A bird in the hand..."
@@ -11,7 +23,6 @@ for char in phrase:
 
 print
 
-"""
 #8.11
 
 thing = "spam!"
