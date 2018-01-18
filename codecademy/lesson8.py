@@ -1,3 +1,142 @@
+
+
+
+
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+def grades_sum(x):
+    scores = 0
+    for i in x:
+        scores = scores + i
+    return scores
+
+def grades_average(grades_input):
+    return grades_sum(grades_input) / float(len(grades_input))
+
+
+def grades_variance(scores):
+    average = grades_average(scores)
+    variance = 0
+    for score in scores:
+        variance += (average - score) ** 2
+    return variance / len(scores)
+
+def grades_std_deviation(variance):
+    return variance ** 0.5
+
+print grades_variance(grades)
+
+
+
+
+def print_grades(grades_input):
+    for i in grades_input:
+        print i
+
+def median(x):
+    b = sorted(x)
+    if len(b) % 2 == 0:
+        print (b[(len(b) / 2) - 1] + b[(len(b) / 2)]) / 2.0
+    else:
+        print b[(len(x) / 2)]
+
+
+
+median([4, 5, 5, 4])
+
+
+
+def remove_duplicates(list):
+    a = []
+    for i in list:
+        if i not in a:
+            a.append(i)
+    return a
+
+
+def product(list):
+    total = 1
+    for num in list:
+        total = total * num
+    return total
+
+def purify(x):
+    a = []
+    for i in x:
+        if i % 2 == 0:
+            a.append(i)
+    return a
+
+print purify([1,2,3,4,5,6,8,10,12])
+
+
+
+def count(sequence,item):
+    c = 0
+    for i in sequence:
+        if i == item:
+            c += 1
+    print c
+
+
+
+def censor(x,y):
+    b = '*' * len(y)
+    for i in x.split():
+        if i != y:
+            print i,
+        else:
+            print b,
+
+
+
+score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
+         "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
+         "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1,
+         "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4,
+         "x": 8, "z": 10}
+
+def scrabble_score(x):
+    a = 0
+    for i in x:
+        a += score[i.lower()]
+    return a
+
+def scrabble_score2(word):
+    word = word.lower()
+    total = 0
+    for letter in word:
+        for leter in score:
+            if letter == leter:
+                total = total + score[leter]
+    return total
+
+
+def anti_vowel(x):
+    a = "aeiouAEIOU"
+    for i in a:
+        x = x.replace(i,"")
+    print x
+
+anti_vowel("aettebssd")
+
+def reverse(x):
+    a = len(x) - 1
+    b = ''
+    while a >= 0:
+        b += x[a]
+        a -= 1
+    print b
+
+
+def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x-1):
+            if x % n == 0:
+                return False
+        return True
+
 def is_even(x):
 
     if (x % 2) == 0:
